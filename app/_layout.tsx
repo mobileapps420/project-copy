@@ -1,3 +1,7 @@
+// Polyfill for Buffer needed by react-native-ble-plx
+import { Buffer } from 'buffer';
+global.Buffer = Buffer;
+
 import { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
